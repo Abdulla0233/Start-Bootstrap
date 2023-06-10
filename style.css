@@ -1,0 +1,277 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+.imgbox {
+  overflow: hidden;
+}
+.imgbox img {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  padding: 100px 0;
+}
+
+header {
+  position: fixed;
+  padding: 25px 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #212529;
+}
+header .imgbox {
+  width: 200px;
+}
+header .imgbox img {
+  cursor: pointer;
+}
+header nav {
+  cursor: pointer;
+}
+header nav a {
+  font-size: 19px;
+  color: #8c8999;
+  margin-right: 30px;
+}
+header nav .home-color {
+  color: #ffc800;
+}
+header .bg {
+  background-color: #212529;
+  margin-bottom: 25px;
+}
+
+#welcome {
+  background-image: url("Assets/section1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+#welcome .box {
+  height: 560px;
+}
+#welcome .box .textbox {
+  margin-top: 38px;
+}
+#welcome .box .textbox h1 {
+  font-size: 90px;
+  line-height: 1.4;
+  color: white;
+}
+#welcome .box .textbox h2 {
+  font-size: 45px;
+  font-weight: 500;
+  color: white;
+}
+#welcome .box .textbox .btn {
+  background-color: #ffc800;
+  padding: 27px 60px;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+#services .textbox h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#services .textbox h3 {
+  color: #6c7785;
+  font-size: 20px;
+  margin: 20px 0 58px 0;
+}
+#services .textbox h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px;
+}
+#services .textbox p {
+  color: #6c7785;
+  font-size: 20px;
+  line-height: 1.4;
+}
+#services .minibox {
+  display: flex;
+  justify-content: center;
+}
+#services .minibox .icon {
+  width: 150px;
+  height: 150px;
+  background-color: #ffc800;
+  border-radius: 100%;
+  margin-right: 30px;
+  font-size: 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio {
+  background-color: #f8f9fa;
+}
+#portfolio .box {
+  background-color: white;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+#portfolio img:hover {
+  cursor: pointer;
+}
+#portfolio h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#portfolio h3 {
+  color: #6c7785;
+  font-size: 20px;
+  margin: 20px 0 58px 0;
+}
+#portfolio .textbox {
+  text-align: center;
+}
+#portfolio .textbox h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+#portfolio .textbox h4 {
+  font-size: 16px;
+  color: #6c7785;
+  margin-top: 10px;
+  margin-bottom: 36px;
+}
+
+#about .textbox h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#about .textbox h2, #about .textbox p {
+  color: #6c7785;
+  font-size: 20px;
+  margin: 8px 0 58px 0;
+}
+#about .textbox p {
+  line-height: 1.4;
+}
+#about .textbox h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+#about .wid {
+  margin-right: 85px;
+}
+#about .wid .textbox {
+  text-align: start;
+}
+#about .start {
+  margin-left: 80px;
+}
+#about .box {
+  display: flex;
+  margin-bottom: 70px;
+}
+#about .box .textbox {
+  text-align: end;
+  width: 360px;
+}
+#about .box .imgbox {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 8px solid #e9ecef;
+  margin: 0 33px;
+}
+#about .bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .bg .bgc {
+  color: white;
+  background-color: #ffc800;
+  width: 150px;
+  height: 150px;
+  border: 8px solid #e9ecef;
+  border-radius: 100%;
+  font-size: 26px;
+  padding: 28px 30px;
+}
+
+#ourTeam {
+  background-color: #f8f9fa;
+}
+#ourTeam h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+#ourTeam h3 {
+  color: #6c7785;
+  font-size: 20px;
+  margin: 20px 0 58px 0;
+}
+#ourTeam img {
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  border: 10px solid #d4d8de;
+  cursor: pointer;
+}
+#ourTeam .box {
+  margin: 0 5px;
+}
+#ourTeam .box .textbox {
+  padding: 15px;
+  text-align: center;
+}
+#ourTeam .box h2 {
+  font-weight: 700;
+  font-size: 28px;
+  padding: 20px 0 0;
+}
+#ourTeam .box h4 {
+  font-weight: 300;
+  font-size: 20px;
+  color: #a8a8a8;
+  margin: 8px 1px;
+  line-height: 1.4;
+}
+#ourTeam .box ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#ourTeam .box ul li {
+  margin: 0 10px;
+  background-color: #000000;
+  border-radius: 50%;
+  padding: 20px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+#ourTeam .box ul li .icon {
+  margin: -7px;
+  color: white;
+}
+#ourTeam p {
+  color: #6c757d;
+  font-size: 29px;
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#microsoft {
+  padding: 60px 0;
+}
+#microsoft .imgbox {
+  width: 140px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
