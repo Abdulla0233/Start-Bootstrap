@@ -276,9 +276,6 @@ header .bg {
   cursor: pointer;
 }
 
-#contactUs {
-  background-image: url("Assets/section1.jpg");
-}
 #contactUs .textbox h1 {
   font-size: 60px;
   font-weight: 700;
@@ -288,13 +285,25 @@ header .bg {
   font-size: 20px;
   margin: 20px 0 58px 0;
 }
-#contactUs .box input {
-  width: 626px;
-  height: 78px;
-  border: 2px solid #a52626;
+#contactUs .minibox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+#contactUs .minibox input {
+  padding: 25px;
+  font-size: 20px;
+  margin: 16px;
+  font-weight: 700;
+}
+#contactUs .box {
+  margin-top: 66px;
+  display: flex;
 }
 #contactUs .box textarea {
-  color: #6c7785;
+  color: #ced4da;
+  padding: 16px;
+  font-weight: 700;
 }
 #contactUs .btn {
   background-color: #ffc800;
@@ -306,4 +315,40 @@ header .bg {
   cursor: pointer;
   margin-top: 30px;
   opacity: 0.6;
+}
+
+footer {
+  padding: 30px 0;
+}
+footer .minibox ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .minibox ul li {
+  margin: 0 10px;
+  background-color: #000000;
+  border-radius: 50%;
+  padding: 20px;
+  width: 10px;
+  height: 10px;
+}
+footer .minibox ul li .icon {
+  margin: -7px;
+  color: white;
+}
+footer .minibox ul li:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+footer h2, footer h3 {
+  color: #5d6566;
+  font-size: 17px;
+  margin: 11px 0;
+}
+footer h2:hover, footer h3:hover {
+  cursor: pointer;
+}
+footer h2 {
+  margin-right: 21px;
 }/*# sourceMappingURL=style.css.map */
