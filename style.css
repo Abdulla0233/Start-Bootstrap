@@ -275,10 +275,26 @@ header .bg {
   width: 140px;
   cursor: pointer;
 }
+#microsoft .mic {
+  width: 200px;
+}
+#microsoft .goog {
+  width: 100px;
+}
+#microsoft .ibm {
+  width: 100px;
+}
 
+#contactUs {
+  background-image: url("Assets/last.png");
+  background-position: center center;
+  background-color: #212529;
+  background-size: cover;
+}
 #contactUs .textbox h1 {
   font-size: 60px;
   font-weight: 700;
+  color: white;
 }
 #contactUs .textbox h2 {
   color: #6c7785;
