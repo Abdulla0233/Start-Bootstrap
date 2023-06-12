@@ -274,4 +274,36 @@ header .bg {
 #microsoft .imgbox {
   width: 140px;
   cursor: pointer;
+}
+
+#contactUs {
+  background-image: url("Assets/section1.jpg");
+}
+#contactUs .textbox h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+#contactUs .textbox h2 {
+  color: #6c7785;
+  font-size: 20px;
+  margin: 20px 0 58px 0;
+}
+#contactUs .box input {
+  width: 626px;
+  height: 78px;
+  border: 2px solid #a52626;
+}
+#contactUs .box textarea {
+  color: #6c7785;
+}
+#contactUs .btn {
+  background-color: #ffc800;
+  padding: 20px 53px;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 30px;
+  opacity: 0.6;
 }/*# sourceMappingURL=style.css.map */
