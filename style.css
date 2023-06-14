@@ -44,6 +44,11 @@ header .bg {
   background-color: #212529;
   margin-bottom: 25px;
 }
+@media screen and (max-width: 992px) {
+  header .menu nav {
+    display: none;
+  }
+}
 
 #welcome {
   background-image: url("Assets/section1.jpg");
@@ -56,12 +61,13 @@ header .bg {
 #welcome .box .textbox {
   margin-top: 38px;
 }
-#welcome .box .textbox h1 {
+#welcome .box .textbox h2 {
   font-size: 90px;
   line-height: 1.4;
   color: white;
+  font-weight: 700;
 }
-#welcome .box .textbox h2 {
+#welcome .box .textbox h1 {
   font-size: 45px;
   font-weight: 500;
   color: white;
@@ -75,6 +81,14 @@ header .bg {
   font-weight: 700;
   cursor: pointer;
   margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  #welcome .box .textbox h1 {
+    font-size: 40px;
+  }
+  #welcome .box .textbox h2 {
+    font-size: 60px;
+  }
 }
 
 #services .textbox h1 {
@@ -331,6 +345,12 @@ header .bg {
   cursor: pointer;
   margin-top: 30px;
   opacity: 0.6;
+}
+@media screen and (max-width: 767px) {
+  #contactUs .box {
+    margin: 15px 0;
+    height: 180px;
+  }
 }
 
 footer {
