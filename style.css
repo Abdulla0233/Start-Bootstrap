@@ -17,7 +17,7 @@ section {
 
 header {
   position: fixed;
-  padding: 25px 0;
+  padding: 18px 0;
   right: 0;
   left: 0;
   z-index: 1;
@@ -34,8 +34,12 @@ header nav {
 }
 header nav a {
   font-size: 19px;
-  color: #8c8999;
+  color: white;
   margin-right: 30px;
+}
+header nav a:hover {
+  color: #ffc800;
+  cursor: pointer;
 }
 header nav .home-color {
   color: #ffc800;
@@ -74,7 +78,7 @@ header .bg {
 }
 #welcome .box .textbox .btn {
   background-color: #ffc800;
-  padding: 27px 60px;
+  padding: 20px 48px;
   color: white;
   font-size: 20px;
   border-radius: 5px;
@@ -82,12 +86,14 @@ header .bg {
   cursor: pointer;
   margin-top: 30px;
 }
-@media screen and (max-width: 768px) {
-  #welcome .box .textbox h1 {
-    font-size: 40px;
-  }
+@media screen and (max-width: 576px) {
   #welcome .box .textbox h2 {
-    font-size: 60px;
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 539px) {
+  #welcome .box .textbox h2 {
+    font-size: 80px;
   }
 }
 
@@ -115,8 +121,8 @@ header .bg {
   justify-content: center;
 }
 #services .minibox .icon {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   background-color: #ffc800;
   border-radius: 100%;
   margin-right: 30px;
@@ -125,6 +131,11 @@ header .bg {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  #services .minibox {
+    padding: 10px;
+  }
 }
 
 #portfolio {
@@ -358,11 +369,14 @@ header .bg {
   padding: 20px;
   width: 10px;
   height: 10px;
-  cursor: pointer;
 }
 #ourTeam .box ul li .icon {
   margin: -7px;
   color: white;
+}
+#ourTeam .box ul li:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 #ourTeam p {
   color: #6c757d;
@@ -425,7 +439,6 @@ header .bg {
   font-size: 20px;
   margin: 16px 0;
   font-weight: 700;
-  border: 1px solid white;
 }
 #contactUs .box {
   margin-top: 66px;
@@ -433,10 +446,9 @@ header .bg {
 }
 #contactUs .box textarea {
   color: #ced4da;
-  padding: 19px;
+  padding: 18px;
   font-weight: 700;
   border-radius: 5px;
-  border: 1px solid white;
 }
 #contactUs .btn {
   background-color: #ffc800;
@@ -472,13 +484,13 @@ footer .minibox ul li {
   width: 10px;
   height: 10px;
 }
+footer .minibox ul li:hover {
+  cursor: pointer;
+}
 footer .minibox ul li .icon {
   margin: -7px;
   color: white;
-}
-footer .minibox ul li:hover {
   cursor: pointer;
-  opacity: 0.7;
 }
 footer h2, footer h3 {
   color: #5d6566;
