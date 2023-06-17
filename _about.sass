@@ -3,27 +3,31 @@
         h1
             font-size: 40px
             font-weight: 700
-        h2,p
+        h3
             color: #6c7785
             font-size: 20px
             margin: 8px 0 58px 0
-        p
-            line-height: 1.4
-        h3
-            font-size: 30px
-            font-weight: 600
     .wid
         margin-right: 85px
         .textbox
             text-align: start
     .start
         margin-left: 80px
+        .textbox
+            text-align: end
     .box
         display: flex
         margin-bottom: 70px
         .textbox
-            text-align: end
             width: 360px
+            h2,h4
+                font-weight: 700
+                font-size: 30px
+                margin-bottom: 10px
+            p
+                font-size: 19px
+                color: #636c74
+                line-height: 1.5
         .imgbox
             width: 150px
             height: 150px
@@ -43,3 +47,48 @@
             border-radius: 100%
             font-size: 26px
             padding: 28px 30px
+    @media screen and ( max-width: 1200px )
+        .box
+            margin: 0 0 70px
+            .imgbox
+                width: 135px
+                height: 135px
+        .bg
+            .bgc
+                width: 135px
+                height: 135px
+    @media screen and ( max-width: 992px )
+        .box
+            padding: 0 55px 0
+            .textbox
+                width: 240px
+            .imgbox
+                width: 120px
+                height: 120px
+        .bg
+            .bgc
+                width: 120px
+                height: 120px
+                padding: 18px 22px
+                font-size: 20px
+    @media screen and ( max-width: 768px )
+        .box
+            padding: 8px
+            align-items: flex-start
+            flex-direction: row-reverse
+            .textbox
+                width: 450px
+                text-align: start
+            .imgbox
+                width: 80px
+                height: 80px
+                margin: 0 20px 0 0
+        .wid
+            flex-direction: row
+        .bg
+            justify-content: flex-start
+            .bgc
+                width: 80px
+                height: 80px
+                padding: 10px
+                font-size: 15px

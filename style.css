@@ -132,8 +132,34 @@ header .bg {
 }
 #portfolio .box {
   background-color: white;
-  margin-bottom: 24px;
-  padding-bottom: 24px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  width: 400px;
+  height: 400px;
+}
+#portfolio .box .imgbox {
+  position: relative;
+}
+#portfolio .box .imgbox li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffc800;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio .box .imgbox li .txt {
+  color: white;
+  font-size: 100px;
+  cursor: pointer;
+}
+#portfolio .box .imgbox li:hover {
+  opacity: 0.9;
+  transition: 1s;
 }
 #portfolio img:hover {
   cursor: pointer;
@@ -166,17 +192,10 @@ header .bg {
   font-size: 40px;
   font-weight: 700;
 }
-#about .textbox h2, #about .textbox p {
+#about .textbox h3 {
   color: #6c7785;
   font-size: 20px;
   margin: 8px 0 58px 0;
-}
-#about .textbox p {
-  line-height: 1.4;
-}
-#about .textbox h3 {
-  font-size: 30px;
-  font-weight: 600;
 }
 #about .wid {
   margin-right: 85px;
@@ -187,13 +206,25 @@ header .bg {
 #about .start {
   margin-left: 80px;
 }
+#about .start .textbox {
+  text-align: end;
+}
 #about .box {
   display: flex;
   margin-bottom: 70px;
 }
 #about .box .textbox {
-  text-align: end;
   width: 360px;
+}
+#about .box .textbox h2, #about .box .textbox h4 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+#about .box .textbox p {
+  font-size: 19px;
+  color: #636c74;
+  line-height: 1.5;
 }
 #about .box .imgbox {
   width: 150px;
@@ -217,13 +248,72 @@ header .bg {
   font-size: 26px;
   padding: 28px 30px;
 }
+@media screen and (max-width: 1200px) {
+  #about .box {
+    margin: 0 0 70px;
+  }
+  #about .box .imgbox {
+    width: 135px;
+    height: 135px;
+  }
+  #about .bg .bgc {
+    width: 135px;
+    height: 135px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #about .box {
+    padding: 0 55px 0;
+  }
+  #about .box .textbox {
+    width: 240px;
+  }
+  #about .box .imgbox {
+    width: 120px;
+    height: 120px;
+  }
+  #about .bg .bgc {
+    width: 120px;
+    height: 120px;
+    padding: 18px 22px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about .box {
+    padding: 8px;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+  }
+  #about .box .textbox {
+    width: 450px;
+    text-align: start;
+  }
+  #about .box .imgbox {
+    width: 80px;
+    height: 80px;
+    margin: 0 20px 0 0;
+  }
+  #about .wid {
+    flex-direction: row;
+  }
+  #about .bg {
+    justify-content: flex-start;
+  }
+  #about .bg .bgc {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    font-size: 15px;
+  }
+}
 
 #ourTeam {
   background-color: #f8f9fa;
 }
 #ourTeam h1 {
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 52px;
+  font-weight: 600;
 }
 #ourTeam h3 {
   color: #6c7785;
@@ -231,8 +321,8 @@ header .bg {
   margin: 20px 0 58px 0;
 }
 #ourTeam img {
-  height: 250px;
-  width: 250px;
+  height: 220px;
+  width: 220px;
   border-radius: 100%;
   border: 10px solid #d4d8de;
   cursor: pointer;
@@ -247,7 +337,7 @@ header .bg {
 #ourTeam .box h2 {
   font-weight: 700;
   font-size: 28px;
-  padding: 20px 0 0;
+  padding: 10px 0 0;
 }
 #ourTeam .box h4 {
   font-weight: 300;
@@ -281,6 +371,11 @@ header .bg {
   text-align: center;
   margin-top: 20px;
 }
+@media screen and (max-width: 768px) {
+  #ourTeam ul {
+    margin-bottom: 42px;
+  }
+}
 
 #microsoft {
   padding: 60px 0;
@@ -298,6 +393,11 @@ header .bg {
 #microsoft .ibm {
   width: 100px;
 }
+@media screen and (max-width: 768px) {
+  #microsoft .box .imgbox {
+    margin: 16px 0;
+  }
+}
 
 #contactUs {
   background-image: url("Assets/last.png");
@@ -309,11 +409,11 @@ header .bg {
   font-size: 60px;
   font-weight: 700;
   color: white;
+  margin-bottom: 18px;
 }
 #contactUs .textbox h2 {
   color: #6c7785;
   font-size: 20px;
-  margin: 20px 0 58px 0;
 }
 #contactUs .minibox {
   display: flex;
@@ -323,8 +423,9 @@ header .bg {
 #contactUs .minibox input {
   padding: 25px;
   font-size: 20px;
-  margin: 16px;
+  margin: 16px 0;
   font-weight: 700;
+  border: 1px solid white;
 }
 #contactUs .box {
   margin-top: 66px;
@@ -332,8 +433,10 @@ header .bg {
 }
 #contactUs .box textarea {
   color: #ced4da;
-  padding: 16px;
+  padding: 19px;
   font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid white;
 }
 #contactUs .btn {
   background-color: #ffc800;
@@ -346,9 +449,9 @@ header .bg {
   margin-top: 30px;
   opacity: 0.6;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #contactUs .box {
-    margin: 15px 0;
+    margin: 13px 0;
     height: 180px;
   }
 }
