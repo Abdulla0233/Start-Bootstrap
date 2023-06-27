@@ -86,6 +86,9 @@ header .bg {
   cursor: pointer;
   margin-top: 30px;
 }
+#welcome .box .textbox .btn:hover {
+  background-color: #d9aa00;
+}
 @media screen and (max-width: 576px) {
   #welcome .box .textbox h2 {
     font-size: 70px;
@@ -193,7 +196,7 @@ header .bg {
   margin-top: 15px;
 }
 #portfolio .textbox h4 {
-  font-size: 16px;
+  font-size: 20px;
   color: #6c7785;
   margin-top: 10px;
   margin-bottom: 36px;
@@ -336,7 +339,6 @@ header .bg {
   width: 220px;
   border-radius: 100%;
   border: 10px solid #d4d8de;
-  cursor: pointer;
 }
 #ourTeam .box {
   margin: 0 5px;
@@ -396,16 +398,18 @@ header .bg {
 }
 #microsoft .imgbox {
   width: 140px;
+}
+#microsoft img {
   cursor: pointer;
 }
 #microsoft .mic {
   width: 200px;
 }
 #microsoft .goog {
-  width: 100px;
+  width: 140px;
 }
 #microsoft .ibm {
-  width: 100px;
+  width: 140px;
 }
 @media screen and (max-width: 768px) {
   #microsoft .box .imgbox {
@@ -436,7 +440,7 @@ header .bg {
 }
 #contactUs .minibox input {
   padding: 25px;
-  font-size: 20px;
+  font-size: 17px;
   margin: 16px 0;
   font-weight: 700;
 }
@@ -486,15 +490,15 @@ footer .minibox ul li {
 }
 footer .minibox ul li:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 footer .minibox ul li .icon {
   margin: -7px;
   color: white;
-  cursor: pointer;
 }
 footer h2, footer h3 {
   color: #5d6566;
-  font-size: 17px;
+  font-size: 15px;
   margin: 11px 0;
 }
 footer h2:hover, footer h3:hover {
