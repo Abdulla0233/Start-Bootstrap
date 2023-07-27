@@ -220,7 +220,7 @@ header .bg {
   font-size: 18px;
   color: #6c757d;
 }
-#about .box img {
+#about .box .imgbox {
   width: 180px;
   height: 180px;
   border-radius: 100%;
@@ -233,7 +233,7 @@ header .bg {
 #about .textbox h3 {
   color: #6c7785;
   font-size: 20px;
-  margin: 8px 0 58px 0;
+  margin: 8px 0 30px 0;
 }
 #about .wid {
   text-align: start;
@@ -241,12 +241,12 @@ header .bg {
 #about .start {
   text-align: end;
 }
-#about .bg {
+#about .add {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#about .bg .bgc {
+#about .add .bgc {
   color: white;
   background-color: #ffc800;
   width: 180px;
@@ -264,6 +264,8 @@ header .bg {
   #about .bg {
     display: flex;
     align-items: center;
+    text-align: end;
+    align-items: center;
   }
 }
 
@@ -279,7 +281,7 @@ header .bg {
   font-size: 20px;
   margin: 20px 0 58px 0;
 }
-#ourTeam img {
+#ourTeam .imgbox {
   height: 220px;
   width: 220px;
   border-radius: 100%;
