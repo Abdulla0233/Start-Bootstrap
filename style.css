@@ -200,14 +200,24 @@ header .bg {
   margin-bottom: 36px;
 }
 
+#about h1 {
+  font-size: 52px;
+  font-weight: 700;
+}
+#about h3 {
+  color: #6c7785;
+  font-size: 20px;
+  margin: 20px 0 30px 0;
+}
 #about .box {
   display: flex;
-  padding: 8px 95px;
   margin: 30px 0;
+  padding: 8px 97px;
 }
 #about .box .textbox {
-  width: 400px;
+  text-align: end;
   padding: 8px 16px;
+  width: 400px;
   margin: 0 30px;
 }
 #about .box .textbox h2, #about .box .textbox h4 {
@@ -216,56 +226,86 @@ header .bg {
   margin: 8px 0 12px;
 }
 #about .box .textbox p {
-  line-height: 1.4;
-  font-size: 18px;
-  color: #6c757d;
+  font-size: 19px;
+  color: #636c74;
+  line-height: 1.5;
 }
 #about .box .imgbox {
   width: 180px;
   height: 180px;
-  border-radius: 100%;
-  border: 8px solid #e9ecef;
+  border-radius: 50%;
+  border: 7px solid #e9ecef;
 }
-#about .textbox h1 {
-  font-size: 40px;
-  font-weight: 700;
-}
-#about .textbox h3 {
-  color: #6c7785;
-  font-size: 20px;
-  margin: 8px 0 30px 0;
-}
-#about .wid {
+#about .right .textbox {
   text-align: start;
-}
-#about .start {
-  text-align: end;
 }
 #about .add {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-#about .add .bgc {
-  color: white;
+#about .add .part {
+  border-radius: 90px;
+  border: 7px solid #e9ecef;
   background-color: #ffc800;
-  width: 180px;
-  height: 180px;
-  border: 8px solid #e9ecef;
-  border-radius: 100%;
-  font-size: 36px;
-  padding: 28px 30px;
+  color: white;
+  width: 170px;
+  height: 170px;
 }
-@media (max-width: 992px) {
+#about .add .part h5 {
+  font-size: 21px;
+  padding: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
   #about .box {
-    flex-direction: column;
-    text-align: center;
+    padding: 0 50px 0;
   }
-  #about .bg {
-    display: flex;
-    align-items: center;
-    text-align: end;
-    align-items: center;
+  #about .box .textbox {
+    width: 220px;
+  }
+  #about .box .imgbox {
+    width: 120px;
+    height: 120px;
+  }
+  #about .add .part {
+    width: 120px;
+    height: 120px;
+  }
+  #about .add .part h5 {
+    padding: 24px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about .box {
+    padding: 8px;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+  }
+  #about .box .textbox {
+    width: 400px;
+    text-align: start;
+  }
+  #about .box .imgbox {
+    width: 100px;
+    height: auto;
+    margin: 0 18px 0 0;
+  }
+  #about .right {
+    flex-direction: row;
+  }
+  #about .add {
+    justify-content: flex-start;
+  }
+  #about .add .part {
+    width: 100px;
+    height: 100px;
+  }
+  #about .add .part h5 {
+    padding: 20px;
+    font-size: 13px;
   }
 }
 
