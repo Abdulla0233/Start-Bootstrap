@@ -501,6 +501,8 @@ footer h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+  }
+  footer .minibox ul {
+    margin: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
