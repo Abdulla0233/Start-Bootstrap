@@ -29,6 +29,21 @@ header .imgbox {
 header .imgbox img {
   cursor: pointer;
 }
+header .btn {
+  color: white;
+  display: flex;
+  display: none;
+  background-color: #ffc800;
+  font-weight: 700;
+}
+header .btn h3 {
+  cursor: pointer;
+  font-size: 18px;
+}
+header .btn .icon {
+  margin: 4px 0 0 9px;
+  cursor: pointer;
+}
 header nav {
   cursor: pointer;
 }
@@ -49,8 +64,11 @@ header .bg {
   margin-bottom: 25px;
 }
 @media screen and (max-width: 992px) {
-  header .menu nav {
+  header nav {
     display: none;
+  }
+  header .btn {
+    display: flex;
   }
 }
 
